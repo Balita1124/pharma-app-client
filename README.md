@@ -7,7 +7,7 @@ Lancer les commandes suivantes:
 - $ cd pharma-app-client
 - $ npm install
 
-## Executer l'application
+## Execution de l'application
 
 - $ npm start
 
