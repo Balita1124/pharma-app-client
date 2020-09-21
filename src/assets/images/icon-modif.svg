@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>modif-group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3---Utilisateurs" transform="translate(-1325.000000, -288.000000)">
+            <g id="Group-12" transform="translate(364.000000, 221.000000)">
+                <g id="Group-4" transform="translate(0.000000, 65.000000)">
+                    <g id="modif-group" transform="translate(958.000000, 2.000000)">
+                        <g id="icon_edit">
+                            <g transform="translate(0.081502, 0.000000)">
+                                <g id="Edit-Icon">
+                                    <g id="Group-15" transform="translate(11.595974, 11.210321) rotate(-315.000000) translate(-11.595974, -11.210321) translate(8.095974, -0.812407)" stroke="#0E58B1">
+                                        <rect id="Rectangle-20" stroke-width="0.9" x="0.45" y="0.45" width="5.38947268" height="19.6944509" rx="1"></rect>
+                                        <path d="M1.09007158,20.3636364 L3.14473634,22.7507583 L5.19940109,20.3636364 L1.09007158,20.3636364 Z" id="Rectangle-20-Copy"></path>
+                                    </g>
+                                    <path d="M18.5,6.79545455 L16.5,4.70454545" id="Line" stroke="#003366" stroke-linecap="square"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

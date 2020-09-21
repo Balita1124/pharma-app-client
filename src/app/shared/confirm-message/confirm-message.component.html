@@ -1,0 +1,10 @@
+<div class="conteneur">
+  <h2 mat-dialog-title>{{modalTitle}}</h2>
+  <mat-dialog-content>
+    <div [innerHTML]="modalContent"></div>
+  </mat-dialog-content>
+  <mat-dialog-actions class="form-group action-dialog" (keyup.enter)="confirmChange()">
+    <button mat-button mat-dialog-close class="btn reset-btn">Non</button>
+    <button mat-button [mat-dialog-close]="true" class="btn save-btn">Oui</button>
+  </mat-dialog-actions>
+</div>

@@ -1,0 +1,62 @@
+.custom-popup {
+  max-width: 50vw;
+  position: relative;
+  width: 550px;
+}
+
+.custom-popup .close-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.custom-popup .close-container .back {
+  background: url(../../../assets/images/close-popup.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 2px;
+  font-size: 0;
+  height: 24px;
+  line-height: normal;
+  margin-top: 0;
+  min-width: inherit;
+  opacity: 1;
+  outline: none !important;
+  padding: 6px;
+  width: 24px;
+}
+
+.custom-popup .cotain-main {
+  margin-top: 30px;
+}
+
+.custom-popup .mat-dialog-actions {
+  margin-bottom: 0;
+}
+
+.container-full-width {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mat-dialog-content{
+  margin-bottom:25px;
+}
+
+.custom-popup .form{
+  max-width: 454px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.custom-popup .form .form-group {
+  width: 100%;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+

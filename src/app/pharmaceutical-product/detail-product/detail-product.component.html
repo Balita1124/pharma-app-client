@@ -1,0 +1,28 @@
+<div class="productDetail">
+  <div class="custom-popup">
+    <button class="back" (click)="onBackPressed()">
+      Retour
+    </button>
+  </div>
+  <div class="productDetailTable">
+    <span class="title"> DETAIL D'UN PRODUIT PHARMACEUTIQUE</span>
+      <table>
+        <tr>
+          <td> Nom : </td>
+          <td> {{product.name}}</td>
+        </tr>
+        <tr>
+          <td> Code : </td>
+          <td>{{product.code}} </td>
+        </tr>
+        <tr>
+          <td> Date : </td>
+          <td> {{product.price}}</td>
+        </tr>
+        <tr>
+          <td> Prix : </td>
+          <td> {{product.validityDate}}</td>
+        </tr>
+      </table>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="retours" transform="translate(-14.000000, -13.000000)" fill="#505050">
+            <g id="Group-2">
+                <g transform="translate(14.000000, 13.000000)">
+                    <rect id="Rectangle-2" transform="translate(5.000000, 3.500000) rotate(-30.000000) translate(-5.000000, -3.500000) " x="0" y="3" width="10" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-2" transform="translate(5.000000, 8.500000) rotate(30.000000) translate(-5.000000, -8.500000) " x="0" y="8" width="10" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

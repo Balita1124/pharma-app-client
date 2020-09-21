@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.conteneur {
+  /*max-width: 600px;*/
+}
+.conteneur .mat-dialog-title {
+  color: #4F4F4F;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.conteneur .mat-dialog-content {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+.conteneur .mat-dialog-actions {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.btn.save-btn, .btn.reset-btn {
+  box-shadow: 0 4px 4px #9B9B9B;
+  color: #fff !important;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 300;
+  height: 30px;
+  line-height: normal;
+  margin: 0 9px !important;
+  min-width: 120px;
+  padding: 0 38px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn.reset-btn {
+  background: #00619B !important;
+  width: 128px;
+}
+
+.btn.save-btn {
+  background: #5A8D1D !important;
+  outline: none;
+}
+
+.btn.save-btn:hover, .btn.reset-btn:hover {
+  box-shadow: 0 8px 12px #9B9B9B;
+  color: #fff;
+  font-weight: 300;
+}
+
+.save {
+  display: flex;
+  justify-content: center;
+}
+
+button, button.back, .btn, .inputsubmit {
+  outline: none;
+}
+
+.title{
+  display: block;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+a , button{
+  outline: none!important;
+}
