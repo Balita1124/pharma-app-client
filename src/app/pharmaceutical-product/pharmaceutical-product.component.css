@@ -38,6 +38,17 @@
   height: 40px;
   padding: 2px 20px;
   background-size: 16px;
+  outline: none;
+}
+.inputdelete {
+  background: url(../../assets/images/close-popup.png) no-repeat center, rgba(255, 0, 0, 0.53);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px #F0F0F0;
+  height: 40px;
+  padding: 2px 20px;
+  background-size: 16px;
+  outline: none;
 }
 
 .btn-create button {

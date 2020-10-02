@@ -6,11 +6,12 @@
       <div class="filtresearch cust-select">
         <!-- Nom / Code -->
         <mat-form-field>
-          <mat-label>Nom / Code</mat-label>
-          <input matInput placeholder="Nom" [(ngModel)]="productFilter.keyword" (keyup.enter)="onSearch()">
+          <mat-label>Nom ou Code</mat-label>
+          <input matInput placeholder="Nom" [(ngModel)]="productFilter.keyword" (keyup.enter)="onSearch()" (change)="needReset()">
         </mat-form-field>
 
         <input matTooltip="Rechercher" type="submit" value="" class="inputsubmit" (click)="onSearch()">
+        <input matTooltip="Rechercher" type="submit" value="" class="inputdelete" (click)="onResetSearch()">
       </div>
       <button matTooltip="Créer" class="btn btn-secondary" (click)="onCreate()">Créer un produit pharmaceutique</button>
     </div>

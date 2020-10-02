@@ -14,6 +14,8 @@ import localeFr from '@angular/common/locales/fr';
 import localeFrExtra from '@angular/common/locales/extra/fr';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import {SocietexGeneralModule} from './societex-general/societex-general.module';
+import {MatMenuModule} from '@angular/material/menu';
 
 registerLocaleData(localeFr, 'fr', localeFrExtra);
 
@@ -25,9 +27,11 @@ registerLocaleData(localeFr, 'fr', localeFrExtra);
     BrowserModule,
     AppRoutingModule,
     PharmaceuticalProductModule,
+    SocietexGeneralModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatMenuModule
   ],
   providers: [
     ProductService,

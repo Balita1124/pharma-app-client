@@ -23,6 +23,7 @@ export class PharmaceuticalProductComponent implements OnInit {
     sort: 'name',
     keyword: '',
   };
+  resetSearch = false;
 
   constructor(
     private router: Router,
@@ -97,6 +98,14 @@ export class PharmaceuticalProductComponent implements OnInit {
 
   onSearch() {
     this.getProduct();
+  }
+
+  onResetSearch() {
+    this.productFilter.keyword = '';
+    this.getProduct();
+  }
+
+  needReset(){
   }
 
   onVisualize(product) {
