@@ -1,0 +1,72 @@
+.list-container{
+  margin-top: 25px;
+}
+
+.btn-create.search {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1em 0!important;
+}
+
+.btn-create {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.btn-create button:hover {
+  box-shadow: 0 4px 13px #9B9B9B;
+}
+
+.filtresearch {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filtresearch input, .filtresearch .mat-form-field {
+  margin-right: 11px;
+}
+
+.inputsubmit {
+  background: url(../../assets/images/icon-search-white.svg) no-repeat center, #739D42;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px #F0F0F0;
+  height: 40px;
+  padding: 2px 20px;
+  background-size: 16px;
+  outline: none;
+}
+.inputdelete {
+  background: url(../../assets/images/close-popup.png) no-repeat center, rgba(255, 0, 0, 0.53);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px #F0F0F0;
+  height: 40px;
+  padding: 2px 20px;
+  background-size: 16px;
+  outline: none;
+}
+
+.btn-create button {
+  background: url(../../assets/images/plus.svg) no-repeat top 6px left 8px, #739D42;
+  background-size: 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  height: 26px;
+  overflow: hidden;
+  padding: 0 10px 0 25px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: none;
+  color: white;
+}
+
+.actionButton {
+  border: none;
+  background-color:white;
+}
+

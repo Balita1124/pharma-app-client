@@ -1,0 +1,74 @@
+<div class="row">
+  <div class="list-container col-lg-12  col-md-12">
+    <span class="title">Gestion des articles</span>
+    <!-- Recherche -->
+    <div class="btn-create search">
+      <div class="filtresearch cust-select">
+        <!-- Nom / Code -->
+        <mat-form-field>
+          <mat-label>Nom ou Code</mat-label>
+          <input matInput placeholder="Nom" [(ngModel)]="productFilter.keyword" (keyup.enter)="onSearch()" (change)="needReset()">
+        </mat-form-field>
+
+        <input matTooltip="Rechercher" type="submit" value="" class="inputsubmit" (click)="onSearch()">
+        <input matTooltip="Rechercher" type="submit" value="" class="inputdelete" (click)="onResetSearch()">
+      </div>
+      <button matTooltip="Créer" class="btn btn-secondary" (click)="onCreate()">Créer un article</button>
+    </div>
+
+    <!-- Tableau -->
+    <div class="list-table">
+      <mat-table matSort [dataSource]="products" aria-label="Elements" matSortDisableClear
+                 (matSortChange)="sortChange($event)">
+
+        <!-- Colonnes  -->
+        <ng-container *ngFor=" let column of displayColumns">
+          <ng-container [matColumnDef]="column.key">
+            <ng-container>
+              <mat-header-cell *matHeaderCellDef mat-sort-header>
+                {{ column.value }}
+              </mat-header-cell>
+            </ng-container>
+            <mat-cell *matCellDef="let product">
+            <span *ngIf="column.key !== 'priceUnit' && column.key !== 'pricePurchaseAverage'">
+              {{ product[column.key] }}
+            </span>
+              <span *ngIf="column.key === 'priceUnit' || column.key === 'pricePurchaseAverage'">
+              {{ product[column.key] | number:'1.0-2':'fr'}}
+            </span>
+            </mat-cell>
+          </ng-container>
+        </ng-container>
+
+        <!-- Boutons d'action -->
+        <ng-container matColumnDef="actions">
+          <mat-header-cell *matHeaderCellDef></mat-header-cell>
+          <mat-cell *matCellDef="let product">
+
+            <button class="actionButton" mat-icon-button (click)="onEdit(product)">
+              <img src="../../../../../assets/images/icon-modif.svg" matTooltip="Modifier">
+            </button>
+
+            <button class="actionButton" mat-icon-button (click)="onDelete(product)">
+              <img src="../../../../assets/images/icon-Suppr.svg" matTooltip="Supprimer">
+            </button>
+
+            <button class="actionButton" mat-icon-button (click)="onVisualize(product)">
+              <img src="../../../../../assets/images/Arrow_right_alt.svg" matTooltip="Détail" style="width: 24px;">
+            </button>
+          </mat-cell>
+        </ng-container>
+
+        <!-- En-tête -->
+        <mat-header-row *matHeaderRowDef="getDisplayColumns();"></mat-header-row>
+        <!-- Lignes -->
+        <mat-row *matRowDef="let row; columns: getDisplayColumns();" class="element-row">
+        </mat-row>
+      </mat-table>
+    </div>
+
+    <mat-paginator [length]="itemsNumber" pageIndex="0" pageSize="10" [pageSizeOptions]="[10, 20 , 50, 100, 250]"
+                   (page)="pageChanged($event)">
+    </mat-paginator>
+  </div>
+</div>
