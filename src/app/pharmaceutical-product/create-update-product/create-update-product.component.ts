@@ -66,7 +66,6 @@ export class CreateUpdateProductComponent implements OnInit {
             panelClass: ['mat-bar-class'],
             verticalPosition: 'top'
           });
-          this.matDialog.closeAll();
         } else {
           let message = '';
           if (res.data && res.data.errors) {

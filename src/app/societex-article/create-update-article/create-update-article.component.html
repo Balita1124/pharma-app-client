@@ -1,1 +1,50 @@
-<p>create-update-article works!</p>
+<div class="col-lg-12  col-md-12">
+  <span class="title">Ajouter un article</span>
+
+  <form [formGroup]="articleForm">
+    <div>
+      <!-- Nom -->
+      <div class="form-group">
+        <mat-form-field>
+          <input matInput placeholder="Nom" type="text" formControlName="name" required/>
+          <mat-error *ngIf="articleForm.getError('required','name')">{{REQUIRED_MESSAGE}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Code -->
+      <div class="form-group">
+        <mat-form-field>
+          <input matInput placeholder="Code" type="text" formControlName="code" required/>
+          <mat-error *ngIf="articleForm.getError('required','code')">{{REQUIRED_MESSAGE}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Date de validité -->
+      <div class="form-group">
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Date de validité" [min]="minDate" required
+                 formControlName="validityDate" #validityDate>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-error *ngIf="articleForm.getError('required','validityDate')">
+            {{ validityDate.value ? 'Date invalide' : REQUIRED_MESSAGE}}
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <!-- Prix de vente -->
+      <div class="form-group">
+        <mat-form-field>
+          <input matInput placeholder="Prix de vente" formControlName="price"
+                 (keypress)="onKeyPress($event)"
+                 numberFormatter required/>
+          <mat-error *ngIf="articleForm.getError('required','price')">{{REQUIRED_MESSAGE}}</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="button" value="Annuler" class="btn reset-btn">Annuler</button>
+      <button type="submit" value="Valider" class="btn save-btn" (click)="onSave()">Enregistrer</button>
+    </div>
+  </form>
+</div>

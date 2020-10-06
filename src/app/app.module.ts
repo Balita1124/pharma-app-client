@@ -16,6 +16,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {SocietexGeneralModule} from './societex-general/societex-general.module';
 import {MatMenuModule} from '@angular/material/menu';
+import {SocietexService} from './societex-article/societex.service';
+import {SocietexArticleModule} from './societex-article/societex-article.module';
 
 registerLocaleData(localeFr, 'fr', localeFrExtra);
 
@@ -28,6 +30,7 @@ registerLocaleData(localeFr, 'fr', localeFrExtra);
     AppRoutingModule,
     PharmaceuticalProductModule,
     SocietexGeneralModule,
+    SocietexArticleModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
     MatProgressSpinnerModule,
@@ -35,6 +38,7 @@ registerLocaleData(localeFr, 'fr', localeFrExtra);
   ],
   providers: [
     ProductService,
+    SocietexService,
     { provide: HTTP_INTERCEPTORS, useClass: LoadingService, multi: true },
   ],
   bootstrap: [AppComponent],

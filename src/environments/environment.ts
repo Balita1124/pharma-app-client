@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   // baseUrl: 'https://pharma-server.herokuapp.com'
-  baseUrl: 'http://localhost:8989'
+  baseUrl: 'http://localhost:8989',
+  articleUrl: 'http://localhost:8990'
 };
 
 /*

@@ -5,20 +5,25 @@ import {CreateUpdateArticleComponent} from './create-update-article/create-updat
 import {DetailArticleComponent} from './detail-article/detail-article.component';
 import {SharedModule} from '../shared/shared.module';
 import {AppRoutingModule} from '../app-routing.module';
+import { SocietexDepotComponent } from './societex-depot.component';
+import { CreateUpdateDepotComponent } from './create-update-depot/create-update-depot.component';
+import { DetailDepotComponent } from './detail-depot/detail-depot.component';
 
 
 @NgModule({
   declarations: [
     SocietexArticleComponent,
     CreateUpdateArticleComponent,
-    DetailArticleComponent
+    DetailArticleComponent,
+    SocietexDepotComponent,
+    CreateUpdateDepotComponent,
+    DetailDepotComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     AppRoutingModule,
   ],
-  entryComponents: [CreateUpdateArticleComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SocietexArticleModule {

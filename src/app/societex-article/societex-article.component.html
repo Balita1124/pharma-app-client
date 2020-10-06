@@ -1,19 +1,28 @@
 <div class="row">
   <div class="list-container col-lg-12  col-md-12">
     <span class="title">Gestion des articles</span>
+    <div class="row">
+      <div class="col-md-12">
+        <ul style="margin-top: 20px">
+          <li style="display: inline-block"><a routerLink="/article">Articles</a></li>
+          <li style="display: inline-block; margin-left: 10px;"><a href="/depot">Depots</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- Recherche -->
     <div class="btn-create search">
       <div class="filtresearch cust-select">
         <!-- Nom / Code -->
         <mat-form-field>
           <mat-label>Nom ou Code</mat-label>
-          <input matInput placeholder="Nom" [(ngModel)]="productFilter.keyword" (keyup.enter)="onSearch()" (change)="needReset()">
+          <input matInput placeholder="Nom" [(ngModel)]="productFilter.keyword" (keyup.enter)="onSearch()"
+                 (change)="needReset()">
         </mat-form-field>
 
         <input matTooltip="Rechercher" type="submit" value="" class="inputsubmit" (click)="onSearch()">
         <input matTooltip="Rechercher" type="submit" value="" class="inputdelete" (click)="onResetSearch()">
       </div>
-      <button matTooltip="Créer" class="btn btn-secondary" (click)="onCreate()">Créer un article</button>
+      <a matTooltip="Créer" class="btn btn-secondary" href="/article/add">Créer un article</a>
     </div>
 
     <!-- Tableau -->
